@@ -12,8 +12,9 @@ function Conter() {
   return (
     <div>
       
-    <button onClick={add}>add value</button>
     <h1>counter: {state}</h1>
+    <button onClick={add}>add value</button>
+
 
     </div>
   )
