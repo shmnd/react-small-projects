@@ -1,24 +1,3 @@
-import React, { useState } from 'react'
-
-function Alert() {
-
-  const [state,setState]=useState('')
-  const alertbox=()=>{
-           
-  }
-
-
-  return (
-    <div>
-      {/* <input type="text" /> */}
-      <input type="text" value={inputText}/>
-
-      <button onClick={alertbox}> submit </button>
-    </div>
-  )
-}
-
-export default Alert
 
 import React, { useState } from 'react';
 
@@ -26,11 +5,12 @@ function Alert() {
   const [inputText, setInputText] = useState('');
 
   const alertbox = () => {
-    alert(`You entered: ${inputText}`);
+    alert(` ${inputText}`);
   };
 
   return (
     <div>
+      <h2>Enter your text </h2>
       <input
         type="text"
         value={inputText}
